@@ -107,7 +107,7 @@ class Dns
         $nameserverPart = $this->getSpecificNameserverPart();
 
         $command = array_filter([
-            'dig',
+            '/usr/local/bin/dig',
             '+nocmd',
             $nameserverPart,
             $this->domain,
